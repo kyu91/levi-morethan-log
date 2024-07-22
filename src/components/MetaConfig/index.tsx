@@ -22,7 +22,6 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
       <meta property="og:url" content={props.url} />
-      <meta property="og:image" content={props.ogImage} />
       {CONFIG.lang && <meta property="og:locale" content={CONFIG.lang} />}
       {props.image && <meta property="og:image" content={props.image} />}
       {/* twitter */}
