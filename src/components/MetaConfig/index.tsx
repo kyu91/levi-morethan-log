@@ -22,6 +22,7 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
       <meta property="og:title" content={props.title} />
       <meta property="og:description" content={props.description} />
       <meta property="og:url" content={props.url} />
+      <meta property="og:image" content={props.ogImage} />
       {CONFIG.lang && <meta property="og:locale" content={CONFIG.lang} />}
       {props.image && <meta property="og:image" content={props.image} />}
       {/* twitter */}
@@ -36,6 +37,9 @@ const MetaConfig: React.FC<MetaConfigProps> = (props) => {
           <meta property="article:author" content={CONFIG.profile.name} />
         </>
       )}
+      
+      {/* Tally 높이값 자동 맞춤 */}
+      <script async src="https://tally.so/widgets/embed.js"></script>
     </Head>
   )
 }
